@@ -12,5 +12,7 @@ public interface BuyerRepository extends JpaRepository<Buyer, Long> {
 
 	Optional<Buyer> findByEmailAndPassword(String email, String password);
     // Additional query methods can be added if needed
+	   // Custom query method to find Buyer by email
+    Buyer findByEmail(String email);
 }
 
